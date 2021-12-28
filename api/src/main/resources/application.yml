@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://203.229.190.95:9906/ci4db?serverTimezone=Asia/Seoul&useSSL=false
+    username: ci4user
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update  # Hibernate ddl auto (create, create-drop, validate, update)
+    properties:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect #org.hibernate.dialect.MariaDB104Dialect
+    show-sql: true
+    open-in-view: true
+
+server:
+  port: 9092
